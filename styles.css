@@ -1,0 +1,180 @@
+body {
+  font-family: "Bebas Neue", sans-serif;
+  font-size: large;
+  color: #333;
+  background-color: #f8f9fa;
+}
+
+header {
+  background-color: #d1a81fe1;
+  color: #080808;
+  padding-left: 2px;
+  padding-top: 60px;
+  padding-bottom: 20px;
+}
+
+header .container {
+  display: flexbox;
+}
+
+header .profile {
+  display: flex;
+  align-items: flex-start; /* Alinea la imagen al inicio */
+  flex: 1; /* Para que ocupe el espacio adecuado */
+}
+
+header .profile img {
+  border-radius: 8%;
+  width: 100%; /* Ocupa todo el espacio disponible dentro del contenedor */
+  max-width: 400px; /* Controla el tamaño máximo de la imagen */
+  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+}
+
+header .profile-text {
+  margin-left: 20px; /* Espacio entre la imagen y el texto */
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start; /* Alinea los textos al inicio */
+}
+
+header .profile-text h1,
+header .profile-text h3 {
+  margin: 0; /* Quita los márgenes por defecto */
+}
+
+header .contact-info {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start; /* Alinea al inicio */
+
+  gap: 4rem; /* Espacio entre los elementos */
+}
+
+header .contact-info p {
+  margin: 0; /* Elimina el margen por defecto de los párrafos */
+}
+
+header .contact-info a {
+  color: #fff;
+  text-decoration: none;
+}
+
+header .contact-info a:hover {
+  text-decoration: underline;
+}
+
+section {
+  padding: 60px 0;
+}
+
+h2 {
+  color: #000000;
+  font-family: orbitron;
+  font-size: 3rem;
+  margin-bottom: 30px;
+  margin: 20px;
+}
+
+.text-about {
+  font-size: 24px;
+  margin-bottom: 93px;
+}
+
+ul {
+  list-style: none;
+  padding: 0;
+}
+
+ul li {
+  padding: 5px 0;
+  font-size: 24px;
+  margin-bottom: 2px;
+}
+
+.project a {
+  color: #ff0000;
+  text-decoration: none;
+}
+
+.project a:hover {
+  text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffe600;
+}
+
+#education {
+  background-color: #424141;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 25px;
+}
+
+#skills {
+  font-size: 2rem;
+}
+
+#skills .container {
+  max-width: 100%;
+}
+#skills img {
+  width: 70px;
+  height: 70px;
+  margin: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+#skills .container img:hover {
+  transform: scale(1.2); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 0.3s ease; /* Transición suave al agrandar */
+}
+
+#experience {
+  background-color: #cfcece;
+}
+#experience p {
+  font-size: 2rem;
+  color: #b39a57;
+}
+#experience h3 {
+  font-size: 4rem;
+  color: #da990d;
+}
+
+h1 {
+  font-size: 7rem;
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
+}
+h3 {
+  font-size: 3rem;
+  color: #000000;
+}
+
+h3.blink {
+  /* Aplicación directa de la clase al h3 */
+  animation: blink-animation 1s steps(10, start) 3;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden; /* Alterna la visibilidad del texto */
+  }
+}
+#projects {
+  background-color: #8d7b147a;
+}
+#projects p {
+  display: none; /* Asegúrate de que los párrafos estén ocultos inicialmente */
+  margin-top: 10px; /* Ajusta el margen si es necesario */
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 4rem;
+}
+#projects h3 {
+  cursor: pointer;
+}
