@@ -5,12 +5,24 @@ body {
   background-color: #f8f9fa;
 }
 
+@keyframes fadeInBackground {
+  0% {
+    background-color: #080808; /* Color oscuro inicial */
+    opacity: 1; /* Comienza completamente transparente */
+  }
+  100% {
+    background-color: #d1a81fe1; /* Color de fondo final */
+    opacity: 10; /* Completamente visible */
+  }
+}
+
 header {
   background-color: #d1a81fe1;
   color: #080808;
   padding-left: 2px;
   padding-top: 60px;
   padding-bottom: 20px;
+  animation: fadeInBackground 4s ease-in-out; /* Aplica la animación */
 }
 
 header .container {
@@ -55,7 +67,7 @@ header .contact-info p {
 }
 
 header .contact-info a {
-  color: #fff;
+  color: #ffffffea;
   text-decoration: none;
 }
 
@@ -67,12 +79,26 @@ section {
   padding: 60px 0;
 }
 
+/* Define la animación de cambio de colores del h2 (titulos de secciones) */
+@keyframes rgbLights {
+  0% {
+    color: #000000; /* Rojo */
+  }
+
+  100% {
+    color: #ffa600; /* Regresa a Rojo */
+  }
+}
+
 h2 {
-  color: #000000;
+  color: #00000077; /* Color inicial */
+  animation: rgbLights 30s infinite alternate; /* Aplica la animación */
   font-family: orbitron;
   font-size: 3rem;
   margin-bottom: 30px;
   margin: 20px;
+  margin-bottom: 6rem;
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
 .text-about {
@@ -92,7 +118,11 @@ ul li {
 }
 
 .project a {
-  color: #ff0000;
+  background-color: #8d7a499d;
+  border-radius: 10px;
+  margin: 2px;
+  padding: 5px;
+  color: #ffffff;
   text-decoration: none;
 }
 
@@ -100,7 +130,43 @@ ul li {
   text-decoration: underline;
 }
 
+/* tema oscuro*/
+body.dark-mode {
+  background-color: #ac4a4a;
+  color: #f8f9fa;
+}
+
+header.dark-mode {
+  background-color: #1a1919;
+  color: #fff;
+}
+
+.navbar-dark .navbar-nav .nav-link.dark-mode {
+  color: #f8f9fa;
+}
+
+section.dark-mode {
+  background-color: #444;
+  color: #ddd;
+}
+
+#education.dark-mode {
+  background-color: #1e1e1e;
+  color: #bbb;
+}
+
+h3 .dark-mode {
+  color: rgba(255, 255, 255, 0.952);
+}
+
+#experience.dark-mode {
+  background-color: #2a2a2a;
+  color: #c5a57a;
+}
+/* hasta aca es el tema oscuro*/
+
 .navbar-nav .nav-link {
+  position: relative;
   color: #fff;
 }
 
@@ -113,6 +179,13 @@ ul li {
   color: #f1f1f1;
   text-align: center;
   font-size: 25px;
+}
+
+#education p:hover {
+  color: #da990d;
+  cursor: pointer;
+  transform: scale(1.4); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 1s ease;
 }
 
 #skills {
@@ -130,8 +203,8 @@ ul li {
   cursor: pointer;
 }
 #skills .container img:hover {
-  transform: scale(1.5); /* Aumenta el tamaño de la imagen al 110% */
-  transition: transform 0.9s ease; /* Transición suave al agrandar */
+  transform: scale(1.91); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 2s ease; /* Transición suave al agrandar */
 }
 
 #experience {
@@ -158,12 +231,12 @@ h3 {
 
 h3.blink {
   /* Aplicación directa de la clase al h3 */
-  animation: blink-animation 1s steps(10, start) 3;
+  animation: blink-animation 1s steps(3, start) 3;
 }
 
 @keyframes blink-animation {
   to {
-    visibility: hidden; /* Alterna la visibilidad del texto */
+    visibility: hidden; /* Alterna la visibilidad del h3(Fullstack dev)*/
   }
 }
 #projects {
@@ -179,4 +252,11 @@ h3.blink {
 #projects h3 {
   cursor: pointer;
   margin-top: 2rem;
+  font-size: 2rem;
+}
+
+#darkModeToggle {
+  border-radius: 50%;
+
+  background-color: #00000094;
 }
