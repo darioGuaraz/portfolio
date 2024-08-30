@@ -1,3 +1,9 @@
+/*talind*/
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* /tailwind */
+
 body {
   font-family: "Bebas Neue", sans-serif;
   font-size: large;
@@ -75,35 +81,26 @@ header .contact-info a:hover {
   text-decoration: underline;
 }
 
-section {
-  padding: 60px 0;
-}
-
-/* Define la animación de cambio de colores del h2 (titulos de secciones) */
-@keyframes rgbLights {
-  0% {
-    color: #000000; /* Rojo */
-  }
-
-  100% {
-    color: #ffa600; /* Regresa a Rojo */
-  }
-}
-
 h2 {
-  color: #00000077; /* Color inicial */
-  animation: rgbLights 30s infinite alternate; /* Aplica la animación */
+  color: #000000; /* Color inicial */
+
   font-family: orbitron;
   font-size: 3rem;
-  margin-bottom: 30px;
+  margin-bottom: 2rem;
+
   margin: 20px;
-  margin-bottom: 6rem;
+
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
 .text-about {
+  margin: 3rem;
+
+  text-align: center;
   font-size: 24px;
-  margin-bottom: 93px;
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  width: 100%;
 }
 
 ul {
@@ -128,6 +125,153 @@ ul li {
 
 .project a:hover {
   text-decoration: underline;
+}
+
+.navbar-nav .nav-link {
+  position: relative;
+  color: #fff;
+}
+
+.navbar-nav .nav-link:hover {
+  color: #ffe600;
+}
+
+#education h2 {
+  color: rgb(238, 186, 88);
+}
+
+#education {
+  background-color: #424141;
+  color: #f1f1f1;
+  text-align: center;
+  font-size: 25px;
+}
+#education .container {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: auto;
+  gap: 20px;
+  align-items: stretch; /* Alinea los elementos hijos para que se extiendan */
+}
+
+#education .content-container {
+  width: 50%;
+}
+
+#education p:hover {
+  color: #da990d;
+  cursor: pointer;
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 1s ease;
+}
+
+.vertical-hr {
+  width: 1px; /* Grosor de la línea */
+  background-color: #0000008a; /* Color de la línea */
+  margin: 0 20px; /* Espaciado opcional a los lados */
+  height: auto; /* Permite que la línea ocupe toda la altura */
+  align-self: stretch; /* Extiende la línea para ocupar toda la altura del contenedor */
+  border: none; /* Elimina cualquier borde */
+}
+
+#skills {
+  font-size: 2rem;
+}
+
+#skills h2 {
+  margin-bottom: 6rem;
+}
+
+#skills .container {
+  max-width: 100%;
+}
+#skills img {
+  width: 70px;
+  height: 70px;
+  margin: 8px;
+  padding: 8px;
+  cursor: pointer;
+}
+#skills .container img:hover {
+  transform: scale(1.91); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 2s ease; /* Transición suave al agrandar */
+}
+
+.containerJob {
+  display: flex; /* Flexbox activa alineación en fila */
+  gap: 20px;
+  padding: 2rem;
+}
+.job {
+  flex: 1; /* Permite que cada columna tome el mismo ancho */
+  border: 1px solid #ccc; /* Borde para visualizar los contenedores */
+  padding: 20px; /* Espaciado interno */
+  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
+}
+
+#experience {
+  background-color: #cfcece;
+}
+#experience p {
+  font-size: 2rem;
+  color: #a37800;
+  cursor: pointer;
+}
+
+#experience h3 {
+  font-size: 4rem;
+  color: #da990d;
+  cursor: pointer;
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
+}
+
+#experience h3:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 1s ease; /* Transición suave al agrandar */
+}
+
+h1 {
+  font-size: 7rem;
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
+}
+h3 {
+  font-size: 4rem;
+  color: #000000;
+  margin-top: 2%;
+}
+
+h3.blink {
+  /* Aplicación directa de la clase al h3 */
+  animation: blink-animation 1s steps(3, start) 3;
+}
+
+@keyframes blink-animation {
+  to {
+    visibility: hidden; /* Alterna la visibilidad del h3(Fullstack dev)*/
+  }
+}
+#projects {
+  background-color: #8d7b147a;
+}
+#projects p {
+  display: none; /* Asegúrate de que los párrafos estén ocultos inicialmente */
+  margin-top: 10px; /* Ajusta el margen si es necesario */
+  font-size: 25px;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  padding-bottom: 2rem;
+}
+#projects h3 {
+  cursor: pointer;
+  margin-top: 2rem;
+  font-size: 2rem;
+}
+
+/*boton de tema oscuro*/
+#darkModeToggle {
+  border-radius: 50%;
+
+  background-color: #00000094;
 }
 
 /* tema oscuro*/
@@ -164,99 +308,3 @@ h3 .dark-mode {
   color: #c5a57a;
 }
 /* hasta aca es el tema oscuro*/
-
-.navbar-nav .nav-link {
-  position: relative;
-  color: #fff;
-}
-
-.navbar-nav .nav-link:hover {
-  color: #ffe600;
-}
-
-#education {
-  background-color: #424141;
-  color: #f1f1f1;
-  text-align: center;
-  font-size: 25px;
-}
-
-#education p:hover {
-  color: #da990d;
-  cursor: pointer;
-  transform: scale(1.4); /* Aumenta el tamaño de la imagen al 110% */
-  transition: transform 1s ease;
-}
-
-#skills {
-  font-size: 2rem;
-}
-
-#skills .container {
-  max-width: 100%;
-}
-#skills img {
-  width: 70px;
-  height: 70px;
-  margin: 8px;
-  padding: 8px;
-  cursor: pointer;
-}
-#skills .container img:hover {
-  transform: scale(1.91); /* Aumenta el tamaño de la imagen al 110% */
-  transition: transform 2s ease; /* Transición suave al agrandar */
-}
-
-#experience {
-  background-color: #cfcece;
-}
-#experience p {
-  font-size: 2rem;
-  color: #b39a57;
-}
-#experience h3 {
-  font-size: 4rem;
-  color: #da990d;
-}
-
-h1 {
-  font-size: 7rem;
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
-}
-h3 {
-  font-size: 4rem;
-  color: #000000;
-  margin-top: 7rem;
-}
-
-h3.blink {
-  /* Aplicación directa de la clase al h3 */
-  animation: blink-animation 1s steps(3, start) 3;
-}
-
-@keyframes blink-animation {
-  to {
-    visibility: hidden; /* Alterna la visibilidad del h3(Fullstack dev)*/
-  }
-}
-#projects {
-  background-color: #8d7b147a;
-}
-#projects p {
-  display: none; /* Asegúrate de que los párrafos estén ocultos inicialmente */
-  margin-top: 10px; /* Ajusta el margen si es necesario */
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 2rem;
-}
-#projects h3 {
-  cursor: pointer;
-  margin-top: 2rem;
-  font-size: 2rem;
-}
-
-#darkModeToggle {
-  border-radius: 50%;
-
-  background-color: #00000094;
-}
