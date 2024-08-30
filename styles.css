@@ -130,8 +130,8 @@ ul li {
   cursor: pointer;
 }
 #skills .container img:hover {
-  transform: scale(1.2); /* Aumenta el tamaño de la imagen al 110% */
-  transition: transform 0.3s ease; /* Transición suave al agrandar */
+  transform: scale(1.5); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 0.9s ease; /* Transición suave al agrandar */
 }
 
 #experience {
@@ -151,8 +151,9 @@ h1 {
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 h3 {
-  font-size: 3rem;
+  font-size: 4rem;
   color: #000000;
+  margin-top: 7rem;
 }
 
 h3.blink {
@@ -173,8 +174,9 @@ h3.blink {
   margin-top: 10px; /* Ajusta el margen si es necesario */
   font-size: 25px;
   font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 4rem;
+  padding-bottom: 2rem;
 }
 #projects h3 {
   cursor: pointer;
+  margin-top: 2rem;
 }
