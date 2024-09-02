@@ -311,3 +311,58 @@ h3 .dark-mode {
   color: #c5a57a;
 }
 /* hasta aca es el tema oscuro*/
+
+/* Estilos responsive para dispositivos móviles */
+@media (max-width: 768px) {
+  header .container {
+    flex-direction: column; /* Coloca la imagen y texto uno debajo del otro */
+    align-items: center; /* Centra los elementos */
+  }
+
+  header .profile img {
+    max-width: 200px; /* Ajusta el tamaño de la imagen en móviles */
+  }
+
+  header .profile-text {
+    margin-left: 0; /* Elimina el margen lateral en pantallas pequeñas */
+    text-align: center; /* Centra el texto debajo de la imagen */
+  }
+
+  header .contact-info {
+    flex-direction: column; /* Coloca los elementos de contacto uno debajo del otro */
+    gap: 1rem; /* Ajusta el espacio entre los elementos */
+  }
+
+  #education .container,
+  #experience .containerJob {
+    flex-direction: column; /* Coloca los elementos uno debajo del otro */
+    gap: 10px; /* Espacio ajustado entre elementos */
+  }
+
+  #education .content-container,
+  .job {
+    width: 100%; /* Ocupa todo el ancho disponible */
+  }
+
+  .text-about {
+    margin: 1rem; /* Ajusta los márgenes en móviles */
+    font-size: 18px; /* Reduce el tamaño del texto para móviles */
+  }
+
+  h1 {
+    font-size: 5rem; /* Ajusta el tamaño de los títulos */
+  }
+
+  h2 {
+    font-size: 2.5rem; /* Ajusta el tamaño de los subtítulos */
+  }
+
+  h3 {
+    font-size: 3rem; /* Ajusta el tamaño de los subtítulos */
+  }
+
+  #skills .container img {
+    width: 50px; /* Ajusta el tamaño de los íconos en móviles */
+    height: 50px;
+  }
+}
