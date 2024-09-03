@@ -272,8 +272,8 @@ header h3 {
 }
 
 h3.blink {
-  animation: blink-animation 0.8s steps(5, start) 4,
-    shake-animation 0.1s ease-in-out 3.5s;
+  animation: blink-animation 0.8s steps(5, start) 3,
+    shake-animation 0.3s ease-in-out 3s;
   /* Primero parpadea (1s) y luego vibra (0.5s) */
 }
 
@@ -362,6 +362,14 @@ section.dark-mode {
 #experience.dark-mode {
   background-color: #252523;
   color: #ddd8c8;
+}
+
+.footer {
+  text-align: center;
+  color: rgb(10, 10, 10);
+  padding: 5px;
+  background-color: rgb(223, 162, 41);
+  font-family: orbitron;
 }
 
 /* Ajustes generales para móviles */
