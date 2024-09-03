@@ -7,7 +7,7 @@
 body {
   font-family: "Bebas Neue", sans-serif;
   font-size: large;
-  color: #333;
+  color: #333333;
   background-color: #f8f9fa;
 }
 
@@ -28,11 +28,17 @@ header {
   padding-left: 2px;
   padding-top: 60px;
   padding-bottom: 20px;
-  animation: fadeInBackground 4s ease-in-out; /* Aplica la animación */
+  animation: fadeInBackground 2s ease-in-out; /* Aplica la animación */
+  margin-bottom: 0px;
+  position: relative;
+  width: 100%;
 }
 
 header .container {
   display: flexbox;
+  margin-top: 40px;
+  margin-bottom: 0px;
+  justify-content: flex-start;
 }
 
 header .profile {
@@ -61,20 +67,28 @@ header .profile-text h3 {
 }
 
 header .contact-info {
+  text-align: center;
   display: flex;
   flex-direction: row;
   justify-content: flex-start; /* Alinea al inicio */
 
-  gap: 4rem; /* Espacio entre los elementos */
+  gap: 1%; /* Espacio entre los elementos */
 }
 
-header .contact-info p {
-  margin: 0; /* Elimina el margen por defecto de los párrafos */
+.contact-info {
+  font-size: 25px;
+  margin-bottom: 0px;
+  padding-bottom: 0%a;
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-start;
+  text-align: center;
+  max-width: 100%; /* Asegura que no sobrepase el ancho de la pantalla */
+  white-space: nowrap; /* Evita que los elementos se ajusten en varias líneas */
 }
 
 header .contact-info a {
   color: #ffffffea;
-  text-decoration: none;
 }
 
 header .contact-info a:hover {
@@ -82,7 +96,7 @@ header .contact-info a:hover {
 }
 
 h2 {
-  color: #000000; /* Color inicial */
+  color: #dfa609;
 
   font-family: orbitron;
   font-size: 3rem;
@@ -94,10 +108,8 @@ h2 {
 }
 
 .text-about {
-  margin: 3rem;
-
   text-align: center;
-  font-size: 24px;
+  font-size: 27px;
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
@@ -125,6 +137,14 @@ ul li {
 
 .project a:hover {
   text-decoration: underline;
+}
+#navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000; /* Asegura que el navbar esté sobre otros elementos */
+  height: 60px; /* Ajusta la altura del navbar */
 }
 
 .navbar-nav .nav-link {
@@ -179,6 +199,10 @@ ul li {
 }
 
 #skills {
+  background-image: url(./src/img/skills.jpeg);
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center;
   font-size: 2rem;
 }
 
@@ -198,7 +222,7 @@ ul li {
 }
 #skills .container img:hover {
   transform: scale(1.91); /* Aumenta el tamaño de la imagen al 110% */
-  transition: transform 2s ease; /* Transición suave al agrandar */
+  transition: transform 1.4s ease; /* Transición suave al agrandar */
 }
 
 .containerJob {
@@ -208,9 +232,8 @@ ul li {
 }
 .job {
   flex: 1; /* Permite que cada columna tome el mismo ancho */
-  border: 1px solid #ccc; /* Borde para visualizar los contenedores */
+
   padding: 20px; /* Espaciado interno */
-  box-sizing: border-box; /* Incluye padding y borde en el ancho total */
 }
 
 #experience {
@@ -223,8 +246,8 @@ ul li {
 }
 
 #experience h3 {
+  color: #505041;
   font-size: 4rem;
-  color: #da990d;
   cursor: pointer;
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
@@ -235,23 +258,52 @@ ul li {
 }
 
 h1 {
-  font-size: 7rem;
+  font-size: 8.5vw;
+  width: 100%;
+  white-space: nowrap;
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
-h3 {
-  font-size: 4rem;
+header h3 {
+  font-size: 6vw;
+  width: 100%;
+  white-space: nowrap;
   color: #000000;
   margin-top: 2%;
 }
 
 h3.blink {
-  /* Aplicación directa de la clase al h3 */
-  animation: blink-animation 1s steps(3, start) 3;
+  animation: blink-animation 0.8s steps(5, start) 4,
+    shake-animation 0.1s ease-in-out 3.5s;
+  /* Primero parpadea (1s) y luego vibra (0.5s) */
 }
 
+/* Animación de parpadeo */
 @keyframes blink-animation {
-  to {
-    visibility: hidden; /* Alterna la visibilidad del h3(Fullstack dev)*/
+  0%,
+  100% {
+    visibility: visible;
+  }
+  50% {
+    visibility: hidden;
+  }
+}
+
+/* Animación de vibración */
+@keyframes shake-animation {
+  0% {
+    transform: translateX(0);
+  }
+  25% {
+    transform: translateX(-5px);
+  }
+  50% {
+    transform: translateX(5px);
+  }
+  75% {
+    transform: translateX(-5px);
+  }
+  100% {
+    transform: translateX(0);
   }
 }
 #projects {
@@ -279,12 +331,12 @@ h3.blink {
 
 /* tema oscuro*/
 body.dark-mode {
-  background-color: #ac4a4a;
+  background-color: #a3977c;
   color: #f8f9fa;
 }
 
 header.dark-mode {
-  background-color: #1a1919;
+  background-color: #313030;
   color: #fff;
 }
 
@@ -293,76 +345,103 @@ header.dark-mode {
 }
 
 section.dark-mode {
-  background-color: #444;
+  background-color: #696666;
   color: #ddd;
 }
 
 #education.dark-mode {
-  background-color: #1e1e1e;
+  background-color: #302f2f;
   color: #bbb;
 }
 
-h3 .dark-mode {
-  color: rgba(255, 255, 255, 0.952);
+#skills.dark-mode {
+  background-color: #2e2e2e; /* Ajusta el color de fondo según tu preferencia */
+  color: #ddd; /* Ajusta el color del texto si es necesario */
 }
 
 #experience.dark-mode {
-  background-color: #2a2a2a;
-  color: #c5a57a;
+  background-color: #252523;
+  color: #ddd8c8;
 }
-/* hasta aca es el tema oscuro*/
 
-/* Estilos responsive para dispositivos móviles */
+/* Ajustes generales para móviles */
 @media (max-width: 768px) {
+  /* Ajustes para el navbar */
+  #navbar {
+    height: auto; /* Ajusta la altura automáticamente en pantallas pequeñas */
+  }
+
+  /* Ajustes para el header */
   header .container {
-    flex-direction: column; /* Coloca la imagen y texto uno debajo del otro */
-    align-items: center; /* Centra los elementos */
+    flex-direction: column; /* Apila la imagen y el texto verticalmente */
+    margin-top: 0; /* Elimina el margen superior */
+  }
+
+  header .profile {
+    align-items: center; /* Centra la imagen */
+    margin-bottom: 20px; /* Añade un margen inferior */
   }
 
   header .profile img {
-    max-width: 200px; /* Ajusta el tamaño de la imagen en móviles */
+    max-width: 200px; /* Ajusta el tamaño máximo de la imagen en móviles */
   }
 
   header .profile-text {
-    margin-left: 0; /* Elimina el margen lateral en pantallas pequeñas */
-    text-align: center; /* Centra el texto debajo de la imagen */
+    text-align: center; /* Centra el texto en móviles */
+    margin-left: 0; /* Elimina el margen izquierdo */
   }
 
-  header .contact-info {
-    flex-direction: column; /* Coloca los elementos de contacto uno debajo del otro */
-    gap: 1rem; /* Ajusta el espacio entre los elementos */
+  /* Ajustes para la sección about */
+
+  /* Ajustes para la sección education */
+  #education .container {
+    flex-direction: column; /* Apila los elementos verticalmente */
+    gap: 10px; /* Ajusta el espacio entre los elementos */
+    width: 100%; /* Asegura que ocupen todo el ancho */
   }
 
-  #education .container,
-  #experience .containerJob {
-    flex-direction: column; /* Coloca los elementos uno debajo del otro */
-    gap: 10px; /* Espacio ajustado entre elementos */
+  #education .content-container {
+    width: 100%; /* Cada contenedor toma todo el ancho en móviles */
   }
 
-  #education .content-container,
+  /* Ajustes para skills */
+  #skills .container img {
+    width: 50px;
+    height: 50px; /* Reduce el tamaño de las imágenes en móviles */
+  }
+
+  /* Ajustes para experience */
+  .containerJob {
+    flex-direction: column; /* Apila los trabajos verticalmente */
+    padding: 1rem; /* Reduce el padding */
+  }
+
   .job {
-    width: 100%; /* Ocupa todo el ancho disponible */
+    margin-bottom: 20px; /* Añade espacio entre trabajos */
+  }
+
+  /* Ajustes generales */
+  h1,
+  h2,
+  h3 {
+    font-size: 2.5rem; /* Reduce el tamaño de las cabeceras en móviles */
   }
 
   .text-about {
-    margin: 1rem; /* Ajusta los márgenes en móviles */
-    font-size: 18px; /* Reduce el tamaño del texto para móviles */
+    margin: 1.5rem; /* Reduce el margen */
+    font-size: 18px; /* Ajusta el tamaño del texto */
+  }
+}
+
+@media (max-width: 768px) {
+  .contact-info {
+    flex-direction: row; /* Asegura que los elementos se mantengan en una sola línea */
+    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
+    text-align: left; /* Ajusta la alineación del texto si es necesario */
   }
 
-  h1 {
-    font-size: 5rem; /* Ajusta el tamaño de los títulos */
-  }
-
-  h2 {
-    font-size: 2.5rem; /* Ajusta el tamaño de los subtítulos */
-  }
-
-  h3 {
-    font-size: 3rem; /* Ajusta el tamaño de los subtítulos */
-  }
-
-  #skills .container img {
-    width: 50px; /* Ajusta el tamaño de los íconos en móviles */
-    height: 50px;
+  /* Ajuste para el tamaño de la fuente en pantallas pequeñas */
+  .contact-info a {
+    font-size: 25px; /* Ajusta el tamaño de la fuente según sea necesario */
   }
 }

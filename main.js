@@ -50,25 +50,24 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleContent("#experience");
 });
 
-//-------------------------------boton tema oscruo---------------------------//
+//-------------------------------------carousel info---------------
+
+//--------------boton tema oscruo---------------------------//
 
 document.addEventListener("DOMContentLoaded", () => {
-  // Selecciona el botón de modo oscuro
   const darkModeToggle = document.getElementById("darkModeToggle");
 
-  // Verifica si el elemento existe
   if (darkModeToggle) {
-    // Escucha el evento de clic en el botón
     darkModeToggle.addEventListener("click", (e) => {
-      e.preventDefault(); // Evita el comportamiento por defecto del enlace
+      e.preventDefault();
 
-      // Alterna la clase 'dark-mode' en el body y otros elementos
+      // Alterna la clase 'dark-mode' en el body
       document.body.classList.toggle("dark-mode");
 
-      // Alterna la clase en los elementos específicos
+      // Alterna la clase 'dark-mode' en otros elementos
       document
         .querySelectorAll(
-          "header, section, #education, #experience, .navbar-nav .nav-link"
+          "header, section, #education, #experience, #skills, #about .navbar-nav .nav-link"
         )
         .forEach((element) => {
           element.classList.toggle("dark-mode");

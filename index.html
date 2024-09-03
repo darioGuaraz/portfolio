@@ -35,7 +35,7 @@
   </head>
   <body>
     <!-- Navegación -->
-    <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
       <div class="container">
         <button id="darkModeToggle">🌙</button>
         <button
@@ -44,7 +44,7 @@
           data-bs-toggle="collapse"
           data-bs-target="#navbarNav"
           aria-controls="navbarNav"
-          aria-expanded="false"
+          aria-expanded="true"
           aria-label="Toggle navigation"
         >
           <span class="navbar-toggler-icon"></span>
@@ -75,6 +75,7 @@
     <header class="text-center">
       <div class="container">
         <div class="profile">
+          <!-- -->
           <img src="./src/img/fotocara1.png" alt="Foto de Perfil" />
           <div class="profile-text ms-3">
             <h1>Dario Hernan Guaraz</h1>
@@ -82,26 +83,37 @@
           </div>
         </div>
         <div class="contact-info mt-3">
-          <p>Buenos Aires, Argentina</p>
-          <p>
-            Email:
-            <a href="mailto:darioguaraz@gmail.com">darioguaraz@gmail.com</a>
-          </p>
-          <p>Teléfono: +54 011 6790 7664</p>
-          <p>
-            LinkedIn:
-            <a
-              href="https://www.linkedin.com/in/dario-hernan-guaraz/"
-              target="_blank"
-              >linkedin.com/in/dario-hernan-guaraz/</a
-            >
-          </p>
-          <p>
-            GitHub:
-            <a href="https://github.com/darioGuaraz" target="_blank"
-              >github.com/darioGuaraz</a
-            >
-          </p>
+          <div class="info-carousel">
+            <p>Buenos Aires, Argentina</p>
+          </div>
+          <div class="info-carousel">
+            <p>
+              Email:
+              <a href="mailto:darioguaraz@gmail.com">darioguaraz@gmail.com</a>
+            </p>
+          </div>
+          <div class="info-carousel">
+            <p>Teléfono: +54 011 6790 7664</p>
+          </div>
+          <div class="info-carousel">
+            <p>
+              LinkedIn:
+              <a
+                href="https://www.linkedin.com/in/dario-hernan-guaraz/"
+                target="_blank"
+                >linkedin.com/in/dario-hernan-guaraz/</a
+              >
+            </p>
+          </div>
+          <div class="info-carousel">
+            <p>
+              GitHub:
+              <a href="https://github.com/darioGuaraz" target="_blank"
+                >github.com/darioGuaraz</a
+              >
+            </p>
+          </div>
+          <!-- Duplicar el contenido para un desplazamiento continuo -->
         </div>
       </div>
     </header>
