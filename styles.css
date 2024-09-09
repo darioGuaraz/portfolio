@@ -399,7 +399,7 @@ section.dark-mode {
   header .container {
     flex-direction: column;
     margin: 0 auto; /* Centra el contenedor */
-    width: 100%; /* Asegura que tome todo el ancho */
+    width: 98%; /* Asegura que tome todo el ancho */
     padding: 0 10px; /* Añade un pequeño padding */
     box-sizing: border-box; /* Incluye padding y bordes en el ancho */
   }
