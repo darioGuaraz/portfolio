@@ -406,6 +406,7 @@ section.dark-mode {
 
   header .profile {
     align-items: center; /* Centra la imagen */
+    text-align: initial;
     margin-bottom: 20px; /* Añade un margen inferior */
   }
 
@@ -452,9 +453,11 @@ section.dark-mode {
 
   /* Ajustes generales */
   h1,
-  h2,
   h3 {
-    font-size: 1.5rem; /* Reduce el tamaño de las cabeceras en móviles */
+    font-size: 1.3rem; /* Reduce el tamaño de las cabeceras en móviles */
+  }
+  h2 {
+    font-size: 2rem;
   }
 
   .text-about {
