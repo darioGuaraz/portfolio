@@ -359,11 +359,33 @@ section.dark-mode {
 }
 
 .footer {
-  text-align: center;
-  color: rgb(10, 10, 10);
-  padding: 5px;
+  color: #000000;
+  padding: 1px;
   background-color: rgb(223, 162, 41);
-  font-family: orbitron;
+  text-align: center;
+}
+.footer a {
+  color: rgb(255, 255, 255);
+}
+
+/*carousel*/
+
+#contactCarousel {
+  margin: 0 !important; /* Elimina márgenes */
+  padding: 0 !important; /* Elimina padding */
+  height: auto !important; /* Ajusta la altura al contenido */
+  max-height: 40px; /* Ajusta la altura máxima según lo que necesites */
+}
+
+.carousel-inner {
+  display: flex; /* Muestra los elementos en fila */
+  align-items: center; /* Centra verticalmente si es necesario */
+}
+
+.info-carousel p {
+  margin: 0; /* Elimina margen en los párrafos */
+  padding: 0; /* Elimina padding en los párrafos */
+  line-height: 1.2; /* Ajusta el espacio entre líneas */
 }
 
 /* Ajustes generales para móviles */
