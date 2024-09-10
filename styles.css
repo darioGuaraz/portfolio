@@ -5,24 +5,17 @@ body {
   background-color: #f8f9fa;
 }
 
-@keyframes fadeInBackground {
-  0% {
-    background-color: #080808; /* Color oscuro inicial */
-    opacity: 1; /* Comienza completamente transparente */
-  }
-  100% {
-    background-color: #d1a81fe1; /* Color de fondo final */
-    opacity: 10; /* Completamente visible */
-  }
-}
-
 header {
-  background-color: #d1a81fe1;
+  background-image: url(./src/img/header-light.jpg);
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+
+  /*background-color: #d1a81fe1;*/
   color: #080808;
   padding-left: 2px;
   padding-top: 60px;
   padding-bottom: 20px;
-  animation: fadeInBackground 2s ease-in-out; /* Aplica la animación */
+
   margin-bottom: 0px;
   position: relative;
   width: 100%;
@@ -316,6 +309,16 @@ h3.blink {
   font-size: 2rem;
 }
 
+.footer {
+  color: #000000;
+  padding: 1px;
+  background-color: rgb(223, 162, 41);
+  text-align: center;
+}
+.footer a {
+  color: rgb(255, 255, 255);
+}
+
 /*boton de tema oscuro*/
 #darkModeToggle {
   border-radius: 50%;
@@ -325,13 +328,17 @@ h3.blink {
 
 /* tema oscuro*/
 body.dark-mode {
-  background-color: #a3977c;
+  background-color: #252525;
   color: #f8f9fa;
 }
 
 header.dark-mode {
-  background-color: #313030;
+  background-image: url(./src/img/header-dark.jpg);
+  /* background-color: #474747;*/
   color: #fff;
+}
+h3.dark-mode {
+  color: rgb(231, 179, 34);
 }
 
 .navbar-dark .navbar-nav .nav-link.dark-mode {
@@ -344,28 +351,22 @@ section.dark-mode {
 }
 
 #education.dark-mode {
-  background-color: #302f2f;
+  background-color: #111111;
   color: #bbb;
 }
 
-#skills.dark-mode {
-  background-color: #2e2e2e; /* Ajusta el color de fondo según tu preferencia */
-  color: #ddd; /* Ajusta el color del texto si es necesario */
-}
-
 #experience.dark-mode {
-  background-color: #252523;
-  color: #ddd8c8;
+  background-color: rgb(255, 255, 255);
+  color: #000000;
 }
 
-.footer {
-  color: #000000;
-  padding: 1px;
-  background-color: rgb(223, 162, 41);
-  text-align: center;
+#projects.dark-mode {
+  background-color: #2b2a29;
 }
-.footer a {
-  color: rgb(255, 255, 255);
+
+.footer.dark-mode {
+  background-color: #000000;
+  color: rgb(253, 207, 1);
 }
 
 /*carousel*/
@@ -421,8 +422,6 @@ section.dark-mode {
     text-align: center;
     padding: 10px 0; /* Espacio superior e inferior */
   }
-
-  /* Ajustes para la sección about */
 
   /* Ajustes para la sección education */
   #education .container {
