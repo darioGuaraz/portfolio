@@ -35,10 +35,15 @@ header .profile {
 }
 
 header .profile img {
-  border-radius: 8%;
   width: 100%; /* Ocupa todo el espacio disponible dentro del contenedor */
   max-width: 400px; /* Controla el tamaño máximo de la imagen */
   height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
+  mask-image: radial-gradient(
+    circle,
+    rgba(0, 0, 0, 1) 33%,
+    rgba(0, 0, 0, 0.5) 66%,
+    rgba(0, 0, 0, 0) 100%
+  );
 }
 
 header .profile-text {
@@ -407,7 +412,7 @@ section.dark-mode {
 
   header .profile {
     align-items: center; /* Centra la imagen */
-    text-align: initial;
+
     margin-bottom: 20px; /* Añade un margen inferior */
   }
 
@@ -451,7 +456,9 @@ section.dark-mode {
   }
 
   /* Ajustes generales */
-  h1,
+  h1 {
+    font-size: 6vw;
+  }
   h3 {
     font-size: 1.3rem; /* Reduce el tamaño de las cabeceras en móviles */
   }
