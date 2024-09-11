@@ -145,7 +145,7 @@ ul li {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffe600;
+  color: #ffc400;
 }
 
 #education h2 {
@@ -342,6 +342,7 @@ header.dark-mode {
   /* background-color: #474747;*/
   color: #fff;
 }
+
 h3.dark-mode {
   color: rgb(231, 179, 34);
 }
