@@ -35,14 +35,15 @@ header .profile {
 }
 
 header .profile img {
+  visibility: visible; /* Asegura que el GIF esté siempre visible */
   width: 100%; /* Ocupa todo el espacio disponible dentro del contenedor */
   max-width: 400px; /* Controla el tamaño máximo de la imagen */
   height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
   mask-image: radial-gradient(
-    circle,
-    rgba(0, 0, 0, 1) 36%,
-    rgba(0, 0, 0, 0.5) 68%,
-    rgba(0, 0, 0, 0) 85%
+    ellipse 60% 79% at 50% 55%,
+    /* Define un óvalo con el tamaño y la posición */ rgba(0, 0, 0, 1) 56%,
+    /* El centro del óvalo será totalmente opaco */ rgba(0, 0, 0, 0.5) 73%,
+    /* Gradiente de opacidad a 50% */ rgba(0, 0, 0, 0) 82%
   );
 }
 
@@ -339,7 +340,7 @@ body.dark-mode {
 
 header.dark-mode {
   background-image: url(./src/img/header-dark1.jpg);
-  /* background-color: #474747;*/
+
   color: #fff;
 }
 
