@@ -112,16 +112,18 @@ h2 {
 }
 
 #about {
-  background-color: #ccc395;
+  background-color: #857b51;
 }
 
 .text-about {
-  background-color: #ccc395;
+  background-color: #857b51;
+  color: #f0f0ec;
   text-align: center;
   font-size: 27px;
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
 ul {
@@ -501,6 +503,10 @@ section.dark-mode {
   }
   h3 {
     font-size: 1.3rem; /* Reduce el tamaño de las cabeceras en móviles */
+  }
+  h3.dark-mode {
+    color: #d6b321;
+    text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
   }
   h2 {
     font-size: 2rem;
