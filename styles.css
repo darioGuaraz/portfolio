@@ -250,12 +250,12 @@ ul li {
 }
 #experience p {
   font-size: 2rem;
-  color: #a37800;
+  color: #917a3b;
   cursor: pointer;
 }
 
 #experience h3 {
-  color: #505041;
+  color: #504d41;
   font-size: 4rem;
   cursor: pointer;
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
@@ -332,10 +332,10 @@ h3.blink {
   padding-bottom: 2rem;
 }
 #projects h3 {
-  color: #242323;
   cursor: pointer;
   margin-top: 2rem;
   font-size: 2rem;
+  display: inline-block;
 }
 
 .footer {
@@ -375,7 +375,7 @@ header.dark-mode {
 }
 
 h3.dark-mode {
-  color: rgb(231, 179, 34);
+  color: #d6b321;
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
@@ -397,7 +397,9 @@ section.dark-mode {
   background-color: rgb(194, 194, 194);
   color: #000000;
 }
-
+#projects h3.darkmode {
+  color: #d6b321;
+}
 #projects.dark-mode {
   background-color: #525252;
 }
