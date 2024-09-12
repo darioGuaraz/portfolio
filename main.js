@@ -67,7 +67,7 @@ document.addEventListener("DOMContentLoaded", () => {
       // Alterna la clase 'dark-mode' en otros elementos
       document
         .querySelectorAll(
-          "header, h3, section, .footer, #education, #experience, #projects, #about .navbar-nav .nav-link"
+          "header, h3, section, #text-about, .footer, #education, #experience, #projects, #about .navbar-nav .nav-link"
         )
         .forEach((element) => {
           element.classList.toggle("dark-mode");

@@ -1,8 +1,18 @@
 body {
   font-family: "Bebas Neue", sans-serif;
   font-size: large;
-  color: #333333;
-  background-color: #f8f9fa;
+  color: #2e2e2e;
+  background-color: #000000;
+  animation: blink 2s; /* Duración de la animación y que no se repita */
+}
+
+@keyframes blink {
+  0% {
+    opacity: 0; /* Empieza en negro */
+  }
+  100% {
+    opacity: 1; /* Termina en el color de fondo original */
+  }
 }
 
 header {
@@ -15,7 +25,6 @@ header {
   padding-left: 2px;
   padding-top: 60px;
   padding-bottom: 20px;
-
   margin-bottom: 0px;
   position: relative;
   width: 100%;
@@ -29,6 +38,7 @@ header .container {
 }
 
 header .profile {
+  text-align: center;
   display: flex;
   align-items: flex-start; /* Alinea la imagen al inicio */
   flex: 1; /* Para que ocupe el espacio adecuado */
@@ -40,10 +50,10 @@ header .profile img {
   max-width: 400px; /* Controla el tamaño máximo de la imagen */
   height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
   mask-image: radial-gradient(
-    ellipse 60% 79% at 50% 55%,
+    ellipse 60% 69% at 50% 55%,
     /* Define un óvalo con el tamaño y la posición */ rgba(0, 0, 0, 1) 51%,
     /* El centro del óvalo será totalmente opaco */ rgba(0, 0, 0, 0.5) 73%,
-    /* Gradiente de opacidad a 50% */ rgba(0, 0, 0, 0) 82%
+    /* Gradiente de opacidad a 50% */ rgba(0, 0, 0, 0) 92%
   );
 }
 
@@ -57,6 +67,7 @@ header .profile-text {
 header .profile-text h1,
 header .profile-text h3 {
   margin: 0; /* Quita los márgenes por defecto */
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
 header .contact-info {
@@ -64,7 +75,7 @@ header .contact-info {
   display: flex;
   flex-direction: row;
   justify-content: flex-start; /* Alinea al inicio */
-
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
   gap: 1%; /* Espacio entre los elementos */
 }
 
@@ -100,7 +111,12 @@ h2 {
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
+#about {
+  background-color: #f7f7f7;
+}
+
 .text-about {
+  background-color: #f7f7f7;
   text-align: center;
   font-size: 27px;
   margin-top: 3rem;
@@ -254,8 +270,8 @@ h1 {
   font-size: 8.5vw;
   width: 100%;
   white-space: nowrap;
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
+
 header h3 {
   font-size: 6vw;
   width: 100%;
@@ -264,10 +280,14 @@ header h3 {
   margin-top: 2%;
 }
 
+h1.blink {
+  animation: shake-animation 3s ease-in-out 0.5s,
+    blink-animation 7s steps(5, start) 1;
+}
+
 h3.blink {
-  animation: blink-animation 0.8s steps(5, start) 3,
-    shake-animation 0.3s ease-in-out 3s;
-  /* Primero parpadea (1s) y luego vibra (0.5s) */
+  animation: blink-animation 0.8s steps(5, start) 4,
+    shake-animation 0.3s ease-in-out 3.5s; /* Primero parpadea (1s) y luego vibra (0.5s) */
 }
 
 /* Animación de parpadeo */
@@ -299,9 +319,11 @@ h3.blink {
     transform: translateX(0);
   }
 }
+
 #projects {
-  background-color: #8d7b147a;
+  background-color: #ccc395;
 }
+
 #projects p {
   display: none; /* Asegúrate de que los párrafos estén ocultos inicialmente */
   margin-top: 10px; /* Ajusta el margen si es necesario */
@@ -318,7 +340,7 @@ h3.blink {
 .footer {
   color: #000000;
   padding: 1px;
-  background-color: rgb(223, 162, 41);
+  background-color: #d6b321;
   text-align: center;
 }
 .footer a {
@@ -338,6 +360,13 @@ body.dark-mode {
   color: #f8f9fa;
 }
 
+#about.dark-mode {
+  background-color: #252525;
+}
+#text-about.dark-mode {
+  background-color: #252525;
+}
+
 header.dark-mode {
   background-image: url(./src/img/header-dark1.jpg);
 
@@ -346,6 +375,7 @@ header.dark-mode {
 
 h3.dark-mode {
   color: rgb(231, 179, 34);
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
 .navbar-dark .navbar-nav .nav-link.dark-mode {
@@ -363,12 +393,12 @@ section.dark-mode {
 }
 
 #experience.dark-mode {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(194, 194, 194);
   color: #000000;
 }
 
 #projects.dark-mode {
-  background-color: #2b2a29;
+  background-color: #525252;
 }
 
 .footer.dark-mode {
@@ -478,9 +508,7 @@ section.dark-mode {
     margin: 1.5rem; /* Reduce el margen */
     font-size: 18px; /* Ajusta el tamaño del texto */
   }
-}
 
-@media (max-width: 720px) {
   .contact-info {
     flex-direction: row; /* Asegura que los elementos se mantengan en una sola línea */
     overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
