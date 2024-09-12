@@ -52,7 +52,7 @@ header .profile img {
   mask-image: radial-gradient(
     ellipse 60% 69% at 50% 55%,
     /* Define un óvalo con el tamaño y la posición */ rgba(0, 0, 0, 1) 51%,
-    /* El centro del óvalo será totalmente opaco */ rgba(0, 0, 0, 0.5) 73%,
+    /* El centro del óvalo será totalmente opaco */ rgba(0, 0, 0, 0.5) 68%,
     /* Gradiente de opacidad a 50% */ rgba(0, 0, 0, 0) 92%
   );
 }
