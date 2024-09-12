@@ -3,7 +3,7 @@ body {
   font-size: large;
 
   background-color: #000000;
-  animation: blink 2s; /* Duración de la animación y que no se repita */
+  animation: blink 0s; /* Duración de la animación y que no se repita */
 }
 
 @keyframes blink {
@@ -16,7 +16,7 @@ body {
 }
 
 header {
-  background-image: url(./src/img/header-light.jpg);
+  background-image: url(./src/img/header-light1.png);
   background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
 
@@ -50,10 +50,10 @@ header .profile img {
   max-width: 400px; /* Controla el tamaño máximo de la imagen */
   height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
   mask-image: radial-gradient(
-    ellipse 60% 69% at 50% 55%,
-    /* Define un óvalo con el tamaño y la posición */ rgba(0, 0, 0, 1) 51%,
-    /* El centro del óvalo será totalmente opaco */ rgba(0, 0, 0, 0.5) 68%,
-    /* Gradiente de opacidad a 50% */ rgba(0, 0, 0, 0) 92%
+    ellipse 55% 69% at 55% 55%,
+    /* Define un óvalo con el tamaño y la posición */ rgb(0, 0, 0) 35%,
+    /* El centro del óvalo será totalmente opaco */ rgba(0, 0, 0, 0.295) 70%,
+    /* Gradiente de opacidad a 50% */ rgba(0, 0, 0, 0.014) 100%
   );
 }
 
@@ -76,7 +76,7 @@ header .contact-info {
   flex-direction: row;
   justify-content: flex-start; /* Alinea al inicio */
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
-  gap: 1%; /* Espacio entre los elementos */
+  gap: 3%; /* Espacio entre los elementos */
 }
 
 .contact-info {
@@ -92,7 +92,7 @@ header .contact-info {
 }
 
 header .contact-info a {
-  color: #ffffffea;
+  color: #ffffff;
 }
 
 header .contact-info a:hover {
@@ -112,11 +112,11 @@ h2 {
 }
 
 #about {
-  background-color: #f7f7f7;
+  background-color: #ccc395;
 }
 
 .text-about {
-  background-color: #f7f7f7;
+  background-color: #ccc395;
   text-align: center;
   font-size: 27px;
   margin-top: 3rem;
@@ -170,7 +170,7 @@ ul li {
 }
 
 #education {
-  background-color: #424141;
+  background-color: #222222;
   color: #f1f1f1;
   text-align: center;
   font-size: 25px;
@@ -193,7 +193,6 @@ ul li {
 
 #education p:hover {
   color: #da990d;
-  cursor: pointer;
   transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
   transition: transform 1s ease;
 }
@@ -246,9 +245,10 @@ ul li {
 }
 
 #experience {
-  background-color: #cfcece;
+  background-color: #ffffff;
 }
 #experience p {
+  text-align: center;
   font-size: 2rem;
   color: #917a3b;
   cursor: pointer;
@@ -256,6 +256,7 @@ ul li {
 
 #experience h3 {
   color: #504d41;
+  text-align: center;
   font-size: 4rem;
   cursor: pointer;
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
@@ -276,7 +277,7 @@ header h3 {
   font-size: 6vw;
   width: 100%;
   white-space: nowrap;
-  color: #fafafa;
+  color: #bdb98b;
   margin-top: 2%;
 }
 
@@ -341,8 +342,9 @@ h3.blink {
 .footer {
   color: #000000;
   padding: 1px;
-  background-color: #d6b321;
+  background-color: #bba650;
   text-align: center;
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 .footer a {
   color: rgb(255, 255, 255);
@@ -394,14 +396,14 @@ section.dark-mode {
 }
 
 #experience.dark-mode {
-  background-color: rgb(194, 194, 194);
+  background-color: rgb(255, 255, 255);
   color: #000000;
 }
 #projects h3.darkmode {
   color: #d6b321;
 }
 #projects.dark-mode {
-  background-color: #525252;
+  background-color: #424141;
 }
 
 .footer.dark-mode {
@@ -454,6 +456,9 @@ section.dark-mode {
   header .profile img {
     max-width: 50%; /* Asegura que la imagen no se desborde */
     height: auto; /* Mantiene la proporción de la imagen */
+  }
+  h3.blink {
+    color: #ffffff;
   }
 
   header .profile-text {
