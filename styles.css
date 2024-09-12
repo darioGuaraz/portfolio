@@ -1,7 +1,7 @@
 body {
   font-family: "Bebas Neue", sans-serif;
   font-size: large;
-  color: #2e2e2e;
+
   background-color: #000000;
   animation: blink 2s; /* Duración de la animación y que no se repita */
 }
@@ -100,7 +100,7 @@ header .contact-info a:hover {
 }
 
 h2 {
-  color: #dfa609;
+  color: #d6b321;
 
   font-family: orbitron;
   font-size: 3rem;
@@ -162,11 +162,11 @@ ul li {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #ffc400;
+  color: #d6b321;
 }
 
 #education h2 {
-  color: rgb(238, 186, 88);
+  color: #d6b321;
 }
 
 #education {
@@ -332,6 +332,7 @@ h3.blink {
   padding-bottom: 2rem;
 }
 #projects h3 {
+  color: #242323;
   cursor: pointer;
   margin-top: 2rem;
   font-size: 2rem;
@@ -403,7 +404,7 @@ section.dark-mode {
 
 .footer.dark-mode {
   background-color: #000000;
-  color: rgb(253, 207, 1);
+  color: #d6b321;
 }
 
 /*carousel*/
