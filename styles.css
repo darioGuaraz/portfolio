@@ -348,6 +348,11 @@ h3.blink {
   display: inline-block;
 }
 
+#projects h3:hover {
+  transform: scale(1.2); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 1.2s ease; /* Transición suave al agrandar */
+}
+
 .footer {
   color: #000000;
   padding: 1px;
