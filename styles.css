@@ -378,10 +378,10 @@ body.dark-mode {
 }
 
 #about.dark-mode {
-  background-color: #252525;
+  background-color: #383836;
 }
 #text-about.dark-mode {
-  background-color: #252525;
+  background-color: #383836;
 }
 
 header.dark-mode {
@@ -410,7 +410,7 @@ section.dark-mode {
 }
 
 #experience.dark-mode {
-  background-color: rgb(194, 189, 189);
+  background-color: rgb(206, 206, 201);
   color: #000000;
 }
 #projects h3.darkmode {
