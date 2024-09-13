@@ -3,7 +3,7 @@ body {
   font-size: large;
 
   background-color: #000000;
-  animation: blink 4s; /* Duración de la animación y que no se repita */
+  animation: blink 2s; /* Duración de la animación y que no se repita */
 }
 
 @keyframes blink {
