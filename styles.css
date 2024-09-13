@@ -3,7 +3,7 @@ body {
   font-size: large;
 
   background-color: #000000;
-  animation: blink 4s; /* Duración de la animación y que no se repita */
+  animation: blink 0s; /* Duración de la animación y que no se repita */
 }
 
 @keyframes blink {
@@ -112,18 +112,19 @@ h2 {
 }
 
 #about {
-  background-color: #857b51;
+  background-color: #ccc395;
+}
+#about h2 {
+  color: #ffffff;
 }
 
 .text-about {
-  background-color: #857b51;
-  color: #f0f0ec;
+  background-color: #ccc395;
   text-align: center;
   font-size: 27px;
   margin-top: 3rem;
   margin-bottom: 3rem;
   width: 100%;
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 
 ul {
@@ -144,6 +145,12 @@ ul li {
   padding: 5px;
   color: #ffffff;
   text-decoration: none;
+}
+#projects h2 {
+  color: rgb(255, 255, 255);
+}
+#projects h3 {
+  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.349);
 }
 
 .project a:hover {
@@ -398,7 +405,7 @@ section.dark-mode {
 }
 
 #experience.dark-mode {
-  background-color: rgb(255, 255, 255);
+  background-color: rgb(194, 189, 189);
   color: #000000;
 }
 #projects h3.darkmode {
@@ -469,6 +476,9 @@ section.dark-mode {
     text-align: center;
     padding: 10px 0; /* Espacio superior e inferior */
   }
+  header h3.dark-mode {
+    color: #d6b321;
+  }
 
   /* Ajustes para la sección education */
   #education .container {
@@ -503,10 +513,6 @@ section.dark-mode {
   }
   h3 {
     font-size: 1.3rem; /* Reduce el tamaño de las cabeceras en móviles */
-  }
-  h3.dark-mode {
-    color: #d6b321;
-    text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
   }
   h2 {
     font-size: 2rem;
