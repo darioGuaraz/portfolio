@@ -114,9 +114,6 @@ h2 {
 #about {
   background-color: #ccc395;
 }
-#about h2 {
-  color: #ffffff;
-}
 
 .text-about {
   background-color: #ccc395;
@@ -146,9 +143,7 @@ ul li {
   color: #ffffff;
   text-decoration: none;
 }
-#projects h2 {
-  color: rgb(255, 255, 255);
-}
+
 #projects h3 {
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.349);
 }
@@ -171,10 +166,6 @@ ul li {
 }
 
 .navbar-nav .nav-link:hover {
-  color: #d6b321;
-}
-
-#education h2 {
   color: #d6b321;
 }
 
@@ -346,11 +337,6 @@ h3.blink {
   margin-top: 2rem;
   font-size: 2rem;
   display: inline-block;
-}
-
-#projects h3:hover {
-  transform: scale(1.2); /* Aumenta el tamaño de la imagen al 110% */
-  transition: transform 1.2s ease; /* Transición suave al agrandar */
 }
 
 .footer {

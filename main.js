@@ -1,55 +1,35 @@
 document.addEventListener("DOMContentLoaded", function () {
   // Función para mostrar/ocultar contenido basado en el contenedor
-  function toggleContent(containerSelector) {
-    // Selecciona todos los elementos h3 dentro del contenedor especificado
+  function toggleContent(containerSelector, contentTag) {
     const headers = document.querySelectorAll(`${containerSelector} h3`);
 
     headers.forEach((header) => {
       header.addEventListener("click", function () {
-        // Determina el siguiente hermano relevante basado en el contenedor
         let content = this.nextElementSibling;
 
-        if (containerSelector === "#projects") {
-          // En `projects`, el contenido siguiente es un `<p>`
-          while (content && content.tagName !== "P") {
-            content = content.nextElementSibling;
-          }
-          if (content) {
-            content.style.display =
-              content.style.display === "none" ? "block" : "none";
-          }
-        } else if (containerSelector === "#experience") {
-          // En `experience`, el contenido siguiente es un `<ul>`
-          while (content && content.tagName !== "UL") {
-            content = content.nextElementSibling;
-          }
-          if (content) {
-            content.style.display =
-              content.style.display === "none" ? "block" : "none";
-          }
+        while (content && content.tagName !== contentTag) {
+          content = content.nextElementSibling;
+        }
+
+        if (content) {
+          content.style.display =
+            content.style.display === "none" ? "block" : "none";
         }
       });
     });
 
-    // Inicialmente oculta todos los elementos relevantes en cada contenedor
-    if (containerSelector === "#projects") {
-      document.querySelectorAll(`${containerSelector} p`).forEach((element) => {
+    // Inicialmente oculta todos los elementos relevantes
+    document
+      .querySelectorAll(`${containerSelector} ${contentTag.toLowerCase()}`)
+      .forEach((element) => {
         element.style.display = "none";
       });
-    } else if (containerSelector === "#experience") {
-      document.querySelectorAll(`${containerSelector} ul`).forEach((ul) => {
-        ul.style.display = "none";
-      });
-    }
   }
 
-  // Aplica la función a la sección de proyectos
-  toggleContent("#projects");
-
-  // Aplica la función a la sección de experiencia
-  toggleContent("#experience");
+  // Llamamos a la función para ambos contenedores
+  toggleContent("#projects", "P");
+  toggleContent("#experience", "UL");
 });
-
 //-------------------------------------carousel info---------------
 
 //--------------boton tema oscruo---------------------------//
