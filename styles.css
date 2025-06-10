@@ -1,156 +1,16 @@
 body {
-  font-family: "Bebas Neue", sans-serif;
-  font-size: large;
-
-  background-color: #000000;
-  animation: blink 2s; /* Duración de la animación y que no se repita */
-}
-
-@keyframes blink {
-  0% {
-    opacity: 0; /* Empieza en negro */
-  }
-  100% {
-    opacity: 1; /* Termina en el color de fondo original */
-  }
-}
-
-header {
-  background-image: url(./src/img/header-light1-fijo.png);
-  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
-  background-repeat: no-repeat; /* Evita que la imagen se repita */
-
-  /*background-color: #d1a81fe1;*/
-  color: #080808;
-  padding-left: 2px;
-  padding-top: 60px;
-  padding-bottom: 20px;
-  margin-bottom: 0px;
-  position: relative;
-  width: 100%;
-}
-
-header .container {
-  display: flexbox;
-  margin-top: 40px;
-  margin-bottom: 0px;
-  justify-content: flex-start;
-}
-
-header .profile {
+  font-family: "montserrat";
+  padding: 0px;
+  margin: 0px;
   text-align: center;
-  display: flex;
-  align-items: flex-start; /* Alinea la imagen al inicio */
-  flex: 1; /* Para que ocupe el espacio adecuado */
-}
-
-header .profile img {
-  visibility: visible; /* Asegura que el GIF esté siempre visible */
-  width: 100%; /* Ocupa todo el espacio disponible dentro del contenedor */
-  max-width: 400px; /* Controla el tamaño máximo de la imagen */
-  height: auto; /* Ajusta la altura automáticamente para mantener la proporción */
-  mask-image: radial-gradient(
-    ellipse 55% 69% at 55% 55%,
-    /* Define un óvalo con el tamaño y la posición */ rgb(0, 0, 0) 35%,
-    /* El centro del óvalo será totalmente opaco */ rgba(0, 0, 0, 0.295) 70%,
-    /* Gradiente de opacidad a 50% */ rgba(0, 0, 0, 0.014) 100%
-  );
-}
-
-header .profile-text {
-  margin-left: 20px; /* Espacio entre la imagen y el texto */
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start; /* Alinea los textos al inicio */
-}
-
-header .profile-text h1,
-header .profile-text h3 {
-  margin: 0; /* Quita los márgenes por defecto */
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
-}
-
-header .contact-info {
-  text-align: center;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start; /* Alinea al inicio */
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
-  gap: 3%; /* Espacio entre los elementos */
-}
-
-.contact-info {
-  font-size: 25px;
-  margin-bottom: 0px;
-  padding-bottom: 0%a;
-  display: flex;
-  flex-direction: row;
-  justify-content: flex-start;
-  text-align: center;
-  max-width: 100%; /* Asegura que no sobrepase el ancho de la pantalla */
-  white-space: nowrap; /* Evita que los elementos se ajusten en varias líneas */
-}
-
-header .contact-info a {
-  color: #ffffff;
-}
-
-header .contact-info a:hover {
-  text-decoration: underline;
 }
 
 h2 {
-  color: #d6b321;
-
-  font-family: orbitron;
-  font-size: 3rem;
-  margin-bottom: 2rem;
-
-  margin: 20px;
-
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
+  font-size: 2rem;
+  font-weight: 700;
 }
 
-#about {
-  background-color: #ccc395;
-}
-
-.text-about {
-  background-color: #ccc395;
-  text-align: center;
-  font-size: 27px;
-  margin-top: 3rem;
-  margin-bottom: 3rem;
-  width: 100%;
-}
-
-ul {
-  list-style: none;
-  padding: 0;
-}
-
-ul li {
-  padding: 5px 0;
-  font-size: 24px;
-  margin-bottom: 2px;
-}
-
-.project a {
-  background-color: #8d7a499d;
-  border-radius: 10px;
-  margin: 2px;
-  padding: 5px;
-  color: #ffffff;
-  text-decoration: none;
-}
-
-#projects h3 {
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.349);
-}
-
-.project a:hover {
-  text-decoration: underline;
-}
+/*-------------------------------NAVBAR---------------------*/
 #navbar {
   position: fixed;
   top: 0;
@@ -159,42 +19,112 @@ ul li {
   z-index: 1000; /* Asegura que el navbar esté sobre otros elementos */
   height: 60px; /* Ajusta la altura del navbar */
 }
-
-.navbar-nav .nav-link {
-  position: relative;
-  color: #fff;
+/*-----------------------------HEADER---------------*/
+header {
+  background-image: url(./src/img/skillsHeader.png);
 }
-
-.navbar-nav .nav-link:hover {
-  color: #d6b321;
-}
-
-#education {
-  background-color: #222222;
-  color: #f1f1f1;
-  text-align: center;
-  font-size: 25px;
-  border-top-style: dashed;
-  border-bottom-style: dashed;
-  border-color: #070707;
-}
-#education .container {
+.header-container {
   display: flex;
-  justify-content: space-between;
-  width: 100%;
-  height: auto;
-  gap: 20px;
-  align-items: stretch; /* Alinea los elementos hijos para que se extiendan */
+  align-items: center;
+  height: 100%;
+}
+.img-header {
+  text-align: end;
+}
+header img {
+  width: 480px;
 }
 
-#education .content-container {
+.profile-text {
   width: 50%;
+  text-align: start;
+  height: 100%;
 }
 
-#education p:hover {
-  color: #da990d;
+h1 {
+  font-size: 4rem;
+  font-weight: 600;
+
+  color: rgb(94, 156, 158);
+}
+/*----------------------------------------ABOUT ME-------------*/
+#about {
+  background: linear-gradient(180deg, rgb(170, 170, 172), rgb(255, 255, 255));
+  padding-top: 5rem;
+}
+.about-container {
+  display: flex;
+  height: 100%;
+}
+.container-text {
+  width: 37%;
+  margin-left: 25%;
+  text-align: start;
+  font-size: 17px;
+}
+.container-text h2 {
+  text-align: end;
+}
+.about-img {
+  width: 50%;
+  text-align: start;
+}
+.about-img img {
+  width: 60%;
+  height: 100%;
+}
+
+/*------------------------------------------EXPERIENCE-----------*/
+
+#experience {
+  background-image: url(./src/img/background2.jpeg);
+  background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
+  background-repeat: no-repeat; /* Evita que la imagen se repita */
+  background-position: center;
+  padding-top: 5rem;
+}
+
+.containerJob {
+  display: flex; /* Flexbox activa alineación en fila */
+  gap: 20px;
+  padding: 2rem;
+  text-align: center;
+}
+
+.job {
+  flex: 1; /* Permite que cada columna tome el mismo ancho */
+  padding: 20px; /* Espaciado interno */
+}
+
+#experience p {
+  text-align: center;
+
+  cursor: pointer;
+}
+
+#experience h3 {
+  text-align: center;
+
+  cursor: pointer;
+}
+
+#experience p:hover {
   transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
   transition: transform 1s ease;
+}
+#experience h3:hover {
+  color: rgb(94, 156, 158);
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 1s ease;
+}
+
+#experience ul {
+  background-color: rgb(68, 66, 66);
+  color: aliceblue;
+  width: 100%;
+  padding: 10px;
+  border-radius: 20px;
+  text-align: start;
 }
 
 .vertical-hr {
@@ -206,16 +136,72 @@ ul li {
   border: none; /* Elimina cualquier borde */
 }
 
+/***********************************************EDUCATION****************/
+
+#education {
+  padding-top: 5rem;
+  padding-bottom: 2rem;
+  background-color: rgb(68, 66, 66);
+
+  color: rgb(199, 198, 198);
+}
+
+#education h2 {
+  color: rgb(94, 156, 158);
+}
+
+.container-education {
+  display: flex;
+  text-align: center;
+  margin-left: 10%;
+  margin-right: 10%;
+  justify-content: space-between;
+}
+.content-container {
+  width: 50%;
+}
+
+.vertical-hr2 {
+  width: 1px; /* Grosor de la línea */
+  background-color: #c7c5c5e1; /* Color de la línea */
+  margin: 0 20px; /* Espaciado opcional a los lados */
+  height: auto; /* Permite que la línea ocupe toda la altura */
+  align-self: stretch; /* Extiende la línea para ocupar toda la altura del contenedor */
+  border: none; /* Elimina cualquier borde */
+}
+
+/*------------------------------------------------PROJECTS---------------*/
+
+#projects {
+  padding: 4rem;
+}
+.project {
+  text-align: start;
+  margin-left: 10%;
+  margin-right: 10%;
+}
+
+.project p {
+  font-size: 18px;
+}
+
+.container-projects {
+  padding: 7px;
+}
+
+.project h3 {
+  cursor: pointer;
+  margin-top: 2rem;
+  color: rgb(94, 156, 158);
+}
+
+/*----------------------------------------------SKILLS--------------*/
+
 #skills {
   background-image: url(./src/img/skills.jpeg);
   background-size: cover; /* Ajusta la imagen para que cubra todo el contenedor */
   background-repeat: no-repeat; /* Evita que la imagen se repita */
   background-position: center;
-  font-size: 2rem;
-}
-
-#skills h2 {
-  margin-bottom: 6rem;
 }
 
 #skills .container {
@@ -233,298 +219,17 @@ ul li {
   transition: transform 1.4s ease; /* Transición suave al agrandar */
 }
 
-.containerJob {
-  display: flex; /* Flexbox activa alineación en fila */
-  gap: 20px;
-  padding: 2rem;
-}
-.job {
-  flex: 1; /* Permite que cada columna tome el mismo ancho */
-
-  padding: 20px; /* Espaciado interno */
-}
-
-#experience {
-  background-color: #ffffff;
-}
-#experience p {
-  text-align: center;
-  font-size: 2rem;
-  color: #917a3b;
-  cursor: pointer;
-}
-
-#experience h3 {
-  color: #504d41;
-  text-align: center;
-  font-size: 4rem;
-  cursor: pointer;
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
-}
-
-#experience h3:hover {
-  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
-  transition: transform 1s ease; /* Transición suave al agrandar */
-}
-
-h1 {
-  font-size: 8.5vw;
-  width: 100%;
-  white-space: nowrap;
-}
-
-header h3 {
-  font-size: 6vw;
-  width: 100%;
-  white-space: nowrap;
-  color: #bdb98b;
-  margin-top: 2%;
-}
-
-h1.blink {
-  animation: shake-animation 3s ease-in-out 0.5s,
-    blink-animation 7s steps(5, start) 1;
-}
-
-h3.blink {
-  animation: blink-animation 0.8s steps(5, start) 4,
-    shake-animation 0.3s ease-in-out 3.5s; /* Primero parpadea (1s) y luego vibra (0.5s) */
-}
-
-/* Animación de parpadeo */
-@keyframes blink-animation {
-  0%,
-  100% {
-    visibility: visible;
-  }
-  50% {
-    visibility: hidden;
-  }
-}
-
-/* Animación de vibración */
-@keyframes shake-animation {
-  0% {
-    transform: translateX(0);
-  }
-  25% {
-    transform: translateX(-5px);
-  }
-  50% {
-    transform: translateX(5px);
-  }
-  75% {
-    transform: translateX(-5px);
-  }
-  100% {
-    transform: translateX(0);
-  }
-}
-
-#projects {
-  background-color: #ccc395;
-}
-
-#projects p {
-  display: none; /* Asegúrate de que los párrafos estén ocultos inicialmente */
-  margin-top: 10px; /* Ajusta el margen si es necesario */
-  font-size: 25px;
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  padding-bottom: 2rem;
-}
-#projects h3 {
-  cursor: pointer;
-  margin-top: 2rem;
-  font-size: 2rem;
-  display: inline-block;
-}
+/*******************************************FOOTER*****************/
 
 .footer {
   color: #000000;
   padding: 1px;
-  background-color: #bba650;
+  margin: 0;
+  background-color: rgb(94, 156, 158);
   text-align: center;
   text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
 }
 .footer a {
   color: rgb(255, 255, 255);
-}
-
-/*boton de tema oscuro*/
-#darkModeToggle {
-  border-radius: 50%;
-
-  background-color: #00000094;
-}
-
-/* tema oscuro*/
-body.dark-mode {
-  background-color: #252525;
-  color: #f8f9fa;
-}
-
-#about.dark-mode {
-  background-color: #383836;
-}
-#text-about.dark-mode {
-  background-color: #383836;
-}
-
-header.dark-mode {
-  background-image: url(./src/img/header-dark1.jpg);
-
-  color: #fff;
-}
-
-h3.dark-mode {
-  color: #d6b321;
-  text-shadow: 2px 2px 4px rgba(2, 2, 0, 0.5);
-}
-
-.navbar-dark .navbar-nav .nav-link.dark-mode {
-  color: #f8f9fa;
-}
-
-section.dark-mode {
-  background-color: #696666;
-  color: #ddd;
-}
-
-#education.dark-mode {
-  background-color: #111111;
-  color: #bbb;
-}
-
-#experience.dark-mode {
-  background-color: rgb(206, 206, 201);
-  color: #000000;
-}
-#projects h3.darkmode {
-  color: #d6b321;
-}
-#projects.dark-mode {
-  background-color: #424141;
-}
-
-.footer.dark-mode {
-  background-color: #000000;
-  color: #d6b321;
-}
-
-/*carousel*/
-
-#contactCarousel {
-  margin: 0 !important; /* Elimina márgenes */
-  padding: 0 !important; /* Elimina padding */
-  height: auto !important; /* Ajusta la altura al contenido */
-  max-height: 40px; /* Ajusta la altura máxima según lo que necesites */
-}
-
-.carousel-inner {
-  display: flex; /* Muestra los elementos en fila */
-  align-items: center; /* Centra verticalmente si es necesario */
-}
-
-.info-carousel p {
-  margin: 0; /* Elimina margen en los párrafos */
-  padding: 0; /* Elimina padding en los párrafos */
-  line-height: 1.2; /* Ajusta el espacio entre líneas */
-}
-
-/* Ajustes generales para móviles */
-@media (max-width: 720px) {
-  /* Ajustes para el navbar */
-  #navbar {
-    height: auto; /* Ajusta la altura automáticamente en pantallas pequeñas */
-  }
-
-  /* Ajustes para el header */
-  header .container {
-    flex-direction: column;
-    margin: 0 auto; /* Centra el contenedor */
-    width: 98%; /* Asegura que tome todo el ancho */
-    padding: 0 10px; /* Añade un pequeño padding */
-    box-sizing: border-box; /* Incluye padding y bordes en el ancho */
-  }
-
-  header .profile {
-    align-items: center; /* Centra la imagen */
-
-    margin-bottom: 20px; /* Añade un margen inferior */
-  }
-
-  header .profile img {
-    max-width: 50%; /* Asegura que la imagen no se desborde */
-    height: auto; /* Mantiene la proporción de la imagen */
-  }
-  h3.blink {
-    color: #ffffff;
-  }
-
-  header .profile-text {
-    margin: 0;
-    width: 100%;
-    text-align: center;
-    padding: 10px 0; /* Espacio superior e inferior */
-  }
-  header h3.dark-mode {
-    color: #d6b321;
-  }
-
-  /* Ajustes para la sección education */
-  #education .container {
-    flex-direction: column; /* Apila los elementos verticalmente */
-    gap: 10px; /* Ajusta el espacio entre los elementos */
-    width: 100%; /* Asegura que ocupen todo el ancho */
-  }
-
-  #education .content-container {
-    width: 100%; /* Cada contenedor toma todo el ancho en móviles */
-  }
-
-  /* Ajustes para skills */
-  #skills .container img {
-    width: 50px;
-    height: 50px; /* Reduce el tamaño de las imágenes en móviles */
-  }
-
-  /* Ajustes para experience */
-  .containerJob {
-    flex-direction: column; /* Apila los trabajos verticalmente */
-    padding: 1rem; /* Reduce el padding */
-  }
-
-  .job {
-    margin-bottom: 20px; /* Añade espacio entre trabajos */
-  }
-
-  /* Ajustes generales */
-  h1 {
-    font-size: 6vw;
-  }
-  h3 {
-    font-size: 1.3rem; /* Reduce el tamaño de las cabeceras en móviles */
-  }
-  h2 {
-    font-size: 2rem;
-  }
-
-  .text-about {
-    text-align: center;
-    width: 90%;
-
-    margin: 1.5rem; /* Reduce el margen */
-    font-size: 18px; /* Ajusta el tamaño del texto */
-  }
-
-  .contact-info {
-    flex-direction: row; /* Asegura que los elementos se mantengan en una sola línea */
-    overflow-x: auto; /* Permite el desplazamiento horizontal si es necesario */
-    text-align: left; /* Ajusta la alineación del texto si es necesario */
-  }
-
-  /* Ajuste para el tamaño de la fuente en pantallas pequeñas */
-  .contact-info a {
-    font-size: 25px; /* Ajusta el tamaño de la fuente según sea necesario */
-  }
+  margin: 0px;
 }

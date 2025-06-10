@@ -36,7 +36,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link
-      href="https://fonts.googleapis.com/css2?family=Anton&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Anton+SC&family=Bebas+Neue&family=Cedarville+Cursive&family=Cinzel:wght@400..900&family=Handjet:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
       rel="stylesheet"
     />
     <link
@@ -52,7 +52,6 @@
     <!-- Navegación -->
     <nav class="navbar navbar-expand-lg bg-dark navbar-dark" id="navbar">
       <div class="container">
-        <button id="darkModeToggle">🌙</button>
         <button
           class="navbar-toggler"
           type="button"
@@ -88,75 +87,59 @@
 
     <!-- Encabezado -->
     <header class="text-center">
-      <div class="container">
-        <div class="profile">
-          <!-- -->
-          <img src="./src/img/fotocaraGIF4.gif" alt="Foto de Perfil" />
-          <div class="profile-text ms-3">
-            <h1 class="blink">Dario Hernan Guaraz</h1>
-            <h3 class="blink">[Full Stack Developer - IT]</h3>
-          </div>
+      <div class="header-container">
+        <div class="img-header">
+          <img src="./src/img/img5.jpg" alt="Foto de Perfil" />
         </div>
-        <div class="contact-info mt-3">
-          <div class="info-carousel">
-            <p>Buenos Aires, Argentina</p>
-          </div>
-          <div class="info-carousel">
-            <p>
-              Email:
-              <a href="mailto:darioguaraz@gmail.com">darioguaraz@gmail.com</a>
-            </p>
-          </div>
-          <div class="info-carousel">
-            <p>Teléfono: (+54 011 6790 7664)</p>
-          </div>
-          <div class="info-carousel">
-            <p>
-              LinkedIn:
-              <a
-                href="https://www.linkedin.com/in/dario-hernan-guaraz/"
-                target="_blank"
-                >linkedin.com/in/dario-hernan-guaraz/</a
-              >
-            </p>
-          </div>
-          <div class="info-carousel">
-            <p>
-              GitHub:
-              <a href="https://github.com/darioGuaraz" target="_blank"
-                >github.com/darioGuaraz</a
-              >
-            </p>
-          </div>
-          <!-- Duplicar el contenido para un desplazamiento continuo -->
+
+        <div class="profile-text">
+          <h1 class="blink">Dario Hernan Guaraz</h1>
+          <h3 class="blink">Technology Specialist</h3>
         </div>
       </div>
     </header>
 
     <!-- Sección Sobre Mí -->
-    <section id="about" class="py-5">
-      <div class="container">
-        <h2 class="text-center">-Sobre Mí-</h2>
-        <p class="text-about" id="text-about">
-          Soy un apasionado de la creatividad, el desarrollo y la tecnología. A
-          lo largo de mi carrera, me he especializado en el desarrollo de
-          aplicaciones web Full Stack, explorando además el mundo del desarrollo
-          móvil y la robótica. Mis habilidades no se detienen en el código;
-          también disfruto de la composición y producción musical y diseño
-          multimedia, fusionando la creatividad con la tecnología. Me considero
-          una persona proactiva en búsqueda de la evolución constante, con
-          facilidad para adaptarme a nuevos entornos y equipos de trabajo. Mi
-          formación además incluye conocimientos en Redes Informáticas, Cloud
-          Computing (AWS Cloud Practitioner), y otras en Análisis y Bases de
-          Datos. Todo esto complementa mi perfil técnico y me permite tomar
-          posiciones donde es necesario articular entre distintas áreas dentro
-          de una empresa o proyecto.
-        </p>
+    <section id="about" c>
+      <div class="about-container">
+        <div class="container-text">
+          <h2>-Sobre Mí-</h2>
+          <p class="text-about" id="text-about">
+            <br />
+            Apasionado por la tecnología y la creatividad, combino más de una
+            década de experiencia en entornos técnicos con una visión integral
+            para desarrollar soluciones digitales efectivas. Como Desarrollador
+            Full Stack y Consultor IT, ofrezco servicios de desarrollo web,
+            soporte técnico e implementación de soluciones informáticas para
+            pymes y profesionales.
+            <br />
+            <br />
+            Mi enfoque va más allá del código: analizo, diseño, implemento y
+            acompaño todo el ciclo de vida de un proyecto. Tengo una sólida base
+            en infraestructura, redes y microinformática, y una fuerte
+            orientación a metodologías ágiles, trabajo en equipo y atención
+            centrada en el cliente.
+            <br />
+            <br />
+            Esta mirada tecnológica integral me permite integrar equipos,
+            liderar iniciativas, articular entre diferentes áreas dentro de un
+            proyecto u empresa, o bien trabajar de forma freelance según cada
+            necesidad.
+            <br />
+            <br />
+            Creo en la innovación con propósito, en la empatía como valor
+            personal, y en el diseño de experiencias que realmente conecten con
+            quienes las usan. Actualmente abierto a oportunidades freelance,
+            colaboraciones o propuestas laborales que valoren la versatilidad,
+            el compromiso y la evolución constante.
+          </p>
+        </div>
+        <div class="about-img"><img src="./src/img/img2bw.png" alt="" /></div>
       </div>
     </section>
 
     <!-- Sección Experiencia -->
-    <section id="experience" class="py-5">
+    <section id="experience">
       <h2 class="text-center">-Experiencia-</h2>
       <div class="containerJob">
         <div class="job">
@@ -235,8 +218,8 @@
     </section>
 
     <!-- Sección Educación -->
-    <section id="education" class="py-5">
-      <div class="container">
+    <section id="education">
+      <div class="container-education">
         <div class="content-container">
           <h2 class="text-center">Educación</h2>
           <p>- Técnico Superior en Programación - TECLAB - Graduado: 2024</p>
@@ -244,22 +227,121 @@
             - Técnico en Informática Personal y Profesional - ISCJ - Graduado:
             2009
           </p>
-          <p>- Lic. en Música - UNTREF (En Curso)</p>
-          <p>- Lic. en Artes Electronicas - UNTREF (disertante)</p>
-          <p>- Lic. en Nutrición - UNLAM (disertante)</p>
         </div>
 
-        <hr class="vertical-hr" />
+        <hr class="vertical-hr2" />
 
         <div class="content-container">
           <h2 class="text-center">Cursos y Certificaciones</h2>
+          <p>- JavaScript Flex - CODERHOUSE - 2025</p>
+          <p>- Base de Datos PostgreSQL Server - Udemy - 2022</p>
           <p>- CISCO CCNAv1 - CISCO - 2021</p>
           <p>- CISCO Introduction to networks - CISCO - 2024</p>
           <p>- Introduction to Cybersecurity - CISCO - 2021</p>
           <p>- Programacion Full Stack - INAP - 2024</p>
           <p>- Introduccion a la Ciencia de Datos - INAP - 2024</p>
-          <p>- Base de Datos PostgreSQL Server - Udemy - 2022</p>
           <p>- Acelerador de Carrera con Power BI - Empowerdata - 2024</p>
+          <p>- Industria 4.0 - Ingelearn - 2025</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- Sección Proyectos -->
+    <section id="projects">
+      <div class="container-projects">
+        <h2 class="text-center">-Proyectos-</h2>
+        <div class="project">
+          <h3>FADANI Projects +</h3>
+          <p>
+            Fadani representa un avance significativo en la tecnología de
+            entretenimiento doméstico, ofreciendo una solución de Ambilight
+            accesible y eficiente. Con Fadani, estamos redefiniendo la
+            experiencia audiovisual en el hogar y ansiosos por compartir sus
+            innovaciones con el mundo.
+            <br /><a
+              href="https://www.instagram.com/fadaniprojects?igsh=MWVlcHhweDB4amo5aQ=="
+              target="_blank"
+              >(Ver Proyecto)</a
+            >
+          </p>
+        </div>
+        <div class="project">
+          <h3>Multielda +</h3>
+          <p>
+            Para mi tesis en la Tecnicatura en Programación, decidí realizar una
+            plataforma online que consiste en un catálogo web de series y
+            películas. Los criterios a su desarrollo fueron: que sea funcional,
+            gratuito, sin logeos para hacerlo más sencillo para el usuario. Todo
+            el material que allí se encuentra es de uso y licencia libre sin
+            publicidad.
+            <br /><a
+              href="https://darioguaraz.github.io/multielda/public/index.html"
+              target="_blank"
+              >(Ver Proyecto)</a
+            >
+          </p>
+        </div>
+        <div class="project">
+          <h3>Encuesta de Satisfacción de Servicio +</h3>
+          <p>
+            Con el fin de mejorar la calidad del servicio del área de soporte
+            IT, se desarrolló un formulario en línea adaptativo y responsivo
+            (Mobile first). En este, el usuario podrá, entre otras cosas,
+            calificar la calidad y el tiempo de resolución/respuesta del técnico
+            involucrado. Los datos ingresados en dicho formulario se almacenan
+            en una base de datos relacional (SQL) en un equipo local. Esta base
+            de datos puede consultarse mediante PowerBI, lo que permite realizar
+            un análisis cualitativo y cuantitativo más detallado gracias al
+            feedback del propio usuario/cliente. Aplicando este sistema en el
+            proceso de calidad, se podrá medir y mejorar de forma continua el
+            desempeño del área de soporte IT.
+            <br /><a
+              href="https://darioguaraz.github.io/encuestaSatisfaccionServicios/"
+              target="_blank"
+              >(Ver Proyecto)</a
+            >
+          </p>
+        </div>
+        <div class="project">
+          <h3>Calculadora +</h3>
+          <p>
+            Prácticas de logica en JavaScript native aplicada al desarrollo de
+            calculadora numérica y responsive UI.
+            <br /><a
+              href="https://darioguaraz.github.io/calculadora/"
+              target="_blank"
+              >(Ver Proyecto)</a
+            >
+          </p>
+        </div>
+
+        <div class="project">
+          <h3>Formulario de suscripcion +</h3>
+          <p>
+            Formulario de suscripcion por email con interfaz adaptative
+            responsive. La finalidad de este proyecto fue la integracion de la
+            API de EmailJS. La misma es totalmente funcional y puede probarla
+            con su email.
+            <br /><a
+              href="https://darioguaraz.github.io/guruprojects/"
+              target="_blank"
+              >(Ver Proyecto)</a
+            >
+          </p>
+        </div>
+        <div class="project">
+          <h3>War of Gods +</h3>
+          <p>
+            Proyecto personal de desarrollo web: un juego de cartas dinámico
+            basado en una mecánica similar al clásico piedra-papel-tijera,
+            reimaginado con una narrativa mitológica y una estructura de reglas
+            escalables.
+            <br /><a
+              href="https://darioguaraz.github.io/wars-of-gods/index.html"
+              target="_blank"
+              >(Ver Proyecto)</a
+            >
+          </p>
         </div>
       </div>
     </section>
@@ -314,96 +396,6 @@
         </ul>
       </div>
     </section>
-
-    <!-- Sección Proyectos -->
-    <section id="projects" class="py-5">
-      <div class="container">
-        <h2 class="text-center">-Proyectos-</h2>
-        <div class="project">
-          <h3>FADANI Projects +</h3>
-          <p>
-            Fadani representa un avance significativo en la tecnología de
-            entretenimiento doméstico, ofreciendo una solución de Ambilight
-            accesible y eficiente. Con Fadani, estamos redefiniendo la
-            experiencia audiovisual en el hogar y ansiosos por compartir sus
-            innovaciones con el mundo.
-            <br /><a
-              href="https://www.instagram.com/fadaniprojects?igsh=MWVlcHhweDB4amo5aQ=="
-              target="_blank"
-              >(Ver𓁹 𓁹Proyecto)</a
-            >
-          </p>
-        </div>
-        <div class="project">
-          <h3>Multielda +</h3>
-          <p>
-            Para mi tesis en la Tecnicatura en Programación, decidí realizar una
-            plataforma online que consiste en un catálogo web de series y
-            películas. Los criterios a su desarrollo fueron: que sea funcional,
-            gratuito, sin logeos para hacerlo más sencillo para el usuario. Todo
-            el material que allí se encuentra es de uso y licencia libre sin
-            publicidad.
-            <br /><a
-              href="https://darioguaraz.github.io/multielda/public/index.html"
-              target="_blank"
-              >(Ver𓁹 𓁹Proyecto)</a
-            >
-          </p>
-        </div>
-        <div class="project">
-          <h3>Encuesta de Satisfacción de Servicio +</h3>
-          <p>
-            Con el fin de mejorar la calidad del servicio del área de soporte
-            IT, se desarrolló un formulario en línea adaptativo y responsivo
-            (Mobile first). En este, el usuario podrá, entre otras cosas,
-            calificar la calidad y el tiempo de resolución/respuesta del técnico
-            involucrado. Los datos ingresados en dicho formulario se almacenan
-            en una base de datos relacional (SQL) en un equipo local. Esta base
-            de datos puede consultarse mediante PowerBI, lo que permite realizar
-            un análisis cualitativo y cuantitativo más detallado gracias al
-            feedback del propio usuario/cliente. Aplicando este sistema en el
-            proceso de calidad, se podrá medir y mejorar de forma continua el
-            desempeño del área de soporte IT.
-            <br /><a
-              href="https://darioguaraz.github.io/encuestaSatisfaccionServicios/"
-              target="_blank"
-              >(Ver𓁹 𓁹Proyecto)</a
-            >
-          </p>
-        </div>
-        <div class="project">
-          <h3>Calculadora +</h3>
-          <p>
-            Prácticas de logica en JavaScript native aplicada al desarrollo de
-            calculadora numérica y responsive UI.
-            <br /><a
-              href="https://darioguaraz.github.io/calculadora/"
-              target="_blank"
-              >(Ver𓁹 𓁹Proyecto)</a
-            >
-          </p>
-        </div>
-
-        <div class="project">
-          <h3>Formulario de suscripcion +</h3>
-          <p>
-            Formulario de suscripcion por email con interfaz adaptative
-            responsive. La finalidad de este proyecto fue la integracion de la
-            API de EmailJS. La misma es totalmente funcional y puede probarla
-            con su email.
-            <br /><a
-              href="https://darioguaraz.github.io/guruprojects/"
-              target="_blank"
-              >(Ver𓁹 𓁹Proyecto)</a
-            >
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <!--    <h1 class="text-3xl font-bold underline color:blue">Hello world!</h1>
-
-    <h2 class="text-3xl font-bold underline color:blue">Hello world!</h2>-->
 
     <footer class="footer">
       <div
