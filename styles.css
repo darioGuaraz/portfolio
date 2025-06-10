@@ -233,3 +233,86 @@ h1 {
   color: rgb(255, 255, 255);
   margin: 0px;
 }
+
+/********************************RESPONSIVE*******************************/
+
+/* Media Queries for Mobile Devices */
+@media (max-width: 768px) {
+  /* Header */
+  header {
+    flex-direction: column; /* Stack elements vertically */
+    text-align: center; /* Center text */
+  }
+
+  .header-container {
+    flex-direction: column; /* Stack image and text */
+    align-items: center; /* Center items */
+  }
+
+  .img-header img {
+    width: 100%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  .profile-text {
+    width: 100%; /* Full width for text */
+    text-align: center; /* Center text */
+  }
+
+  /* About Section */
+  #about {
+    padding-top: 2rem; /* Reduce padding */
+  }
+
+  .about-container {
+    flex-direction: column; /* Stack text and image */
+    align-items: center; /* Center items */
+  }
+
+  .container-text {
+    width: 90%; /* Full width for text */
+    margin-left: 0; /* Remove left margin */
+    text-align: center; /* Center text */
+  }
+
+  .about-img img {
+    width: 80%; /* Make image responsive */
+    height: auto; /* Maintain aspect ratio */
+  }
+
+  /* Experience Section */
+  #experience {
+    padding-top: 2rem; /* Reduce padding */
+  }
+
+  .containerJob {
+    flex-direction: column; /* Stack job entries */
+    align-items: center; /* Center items */
+  }
+
+  .job {
+    width: 90%; /* Full width for job entries */
+    margin-bottom: 1rem; /* Add space between jobs */
+  }
+
+  /* Education Section */
+  #education {
+    padding-top: 2rem; /* Reduce padding */
+  }
+
+  .container-education {
+    flex-direction: column; /* Stack education entries */
+    align-items: center; /* Center items */
+    margin-left: 0; /* Remove left margin */
+    margin-right: 0; /* Remove right margin */
+  }
+
+  .content-container {
+    width: 90%; /* Full width for content */
+    text-align: center; /* Center text */
+  }
+
+  .vertical-hr2 {
+    display: none; /* Hide vertical line on mobile */
+  }
+}
