@@ -183,10 +183,6 @@ h1 {
 
 #projects {
   padding: 4rem;
-  background-image: url(src/img/backgroundProjects.png);
-  background-size: cover;
-  background-repeat: no-repeat; /* Evita que se repita */
-  background-position: center; /* Centra la imagen */
 }
 .project {
   text-align: center;
@@ -279,6 +275,13 @@ h1 {
     width: 100%;
     padding: 0;
     margin: 0;
+  }
+  /*-------------MEDIA----PROJECTS------------------*/
+  #projects {
+    background-image: url(src/img/backgroundProjects.png);
+    background-size: cover;
+    background-repeat: no-repeat; /* Evita que se repita */
+    background-position: center; /* Centra la imagen */
   }
 }
 /********************************RESPONSIVE**MOVILE*****************************/
