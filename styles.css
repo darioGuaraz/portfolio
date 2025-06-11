@@ -26,6 +26,7 @@ h2 {
 }
 /*-----------------------------HEADER---------------*/
 header {
+  margin-top: 60px;
   background-image: url(./src/img/skillsHeader.png);
 }
 .header-container {
@@ -182,9 +183,13 @@ h1 {
 
 #projects {
   padding: 4rem;
+  background-image: url(src/img/backgroundProjects.png);
+  background-size: cover;
+  background-repeat: no-repeat; /* Evita que se repita */
+  background-position: center; /* Centra la imagen */
 }
 .project {
-  text-align: start;
+  text-align: center;
   margin-left: 10%;
   margin-right: 10%;
 }
@@ -198,11 +203,15 @@ h1 {
 }
 
 .project h3 {
+  font-size: 1rem;
   cursor: pointer;
   margin-top: 2rem;
   color: rgb(94, 156, 158);
 }
-
+.project h3:hover {
+  transform: scale(1.1); /* Aumenta el tamaño de la imagen al 110% */
+  transition: transform 1s ease;
+}
 /*----------------------------------------------SKILLS--------------*/
 
 #skills {
@@ -243,7 +252,35 @@ h1 {
 }
 
 /*********************************RESPONSIVE NOTEBOOK**************************/
+@media screen and (max-width: 1440px) {
+  /*----------MEDIA --- ABOUT-----------*/
+  #about {
+    padding-top: 0;
+  }
 
+  .about-container {
+    width: 100%;
+    padding: 5%;
+  }
+  .container-text {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .container-text h2 {
+    text-align: center;
+  }
+  .about-img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+  .about-img img {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+  }
+}
 /********************************RESPONSIVE**MOVILE*****************************/
 @media screen and (max-width: 768px) {
   /* HEADER */
