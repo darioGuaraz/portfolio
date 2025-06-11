@@ -341,5 +341,6 @@ h1 {
 
   #projects h3 {
     font-size: 1rem;
+    padding: 0;
   }
 }
