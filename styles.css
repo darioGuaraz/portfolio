@@ -284,21 +284,22 @@ h1 {
     height: 70%;
     margin-right: 0px;
     padding-right: 0%;
+    margin-bottom: 30px;
   }
 
   .about-img h4 {
     display: block;
     font-family: "poppins";
-    font-weight: 700;
+    font-weight: 400;
     position: absolute;
-    top: 15%; /* ajusta para mover verticalmente */
-    left: 78%; /* ajusta para mover horizontalmente */
-    transform: translate(-50%, -50%); /* centra el texto exactamente en medio */
+    top: 43%; /* ajusta para mover verticalmente */
+    left: 2%; /* ajusta para mover horizontalmente */
+
     text-align: start;
-    font-size: 54px;
-    line-height: 0.8;
-    letter-spacing: -0.5px;
-    color: rgba(94, 156, 158, 0.63);
+    font-size: 94px;
+    line-height: 0.75;
+    letter-spacing: -9px;
+    color: rgba(94, 156, 158, 0.699);
   }
 
   /* EXPERIENCE */
