@@ -30,4 +30,4 @@ document.addEventListener("DOMContentLoaded", function () {
   toggleContent("#projects", "P");
   toggleContent("#experience", "UL");
 });
-//-------------------------------------carousel info---------------
+//-------------------------------------shreink---------------
